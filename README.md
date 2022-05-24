@@ -1,2 +1,4 @@
-# web-425
-A repository for WEB425-346A Angular with TypeScript
+# WEB 425 Angular with TypeScript
+## Contributors
+* Professor Richard Krasso
+* Laura Kendl
