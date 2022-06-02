@@ -1,0 +1,46 @@
+<!--
+============================================
+; Title: Exercise 2.2
+; File Name: app.component.html
+; Author: Professor Krasso
+; Date: 2 June 2022
+; Modified By: Laura Kendl
+; Description: Demonstrates how to build an Angular application.
+; Note: "The routerLink directive is how we navigate between components in an Angular application" (Professor Krasso)
+===========================================
+-->
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <ul class="navbar-nav">
+
+    <!--Add routerLink to each nav-link to display corresponding component.html-->
+    <li class="nav-item active">
+      <a class="nav-link" routerLink="/home">Home</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/about">About</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/contact">Contact</a>
+    </li>
+
+  </ul>
+</nav>
+
+<div class="main">
+
+  <br /><br />
+  <h2>Exercise 2.2 - Navigation</h2>
+  <div class="row">
+
+    <div class="col">
+
+      <router-outlet></router-outlet>
+
+    </div>
+
+  </div>
+
+</div>
