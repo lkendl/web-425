@@ -6,6 +6,8 @@
 ; Date: 2 June 2022
 ; Modified By: Laura Kendl
 ; Description: Demonstrates how to build an Angular application.
+; Resources:
+; GitHub: https://github.com/buwebdev/web-425/blob/master/week-2/composer-app/src/app/app-routing.module.ts (app-routing.module.ts)
 ===========================================
 */
 
@@ -16,7 +18,11 @@ import { ComposerListComponent } from './composer-list/composer-list.component';
 import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
-  { path: '#', component: ComposerListComponent},
+  {
+    path: '',
+    redirectTo: '/composer-list',
+    pathMatch: 'full'
+  },
   { path: 'composer-list', component: ComposerListComponent},
   { path: 'contact', component: ContactComponent},
   { path: 'about', component: AboutComponent}
