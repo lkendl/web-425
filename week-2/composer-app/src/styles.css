@@ -1,0 +1,14 @@
+/**
+============================================
+; Title: Assignment 2.4
+; File Name: styles.css
+; Author: Professor Krasso
+; Date: 3 June 2022
+; Modified By: Laura Kendl
+; Description: Demonstrates how to build an Angular application.
+; Resources:
+; Stackoverflow: https://stackoverflow.com/questions/60365440/how-to-programmatically-use-bootstrap-icons-in-an-angular-project (How to programmatically use bootstrap icons in an angular project?)
+===========================================
+*/
+
+@import "~bootstrap-icons/font/bootstrap-icons.css";
