@@ -1,0 +1,16 @@
+/*
+============================================
+; Title: Assignment 3.2
+; File Name: composer.interface.ts
+; Author: Professor Krasso
+; Date: 7 June 2022
+; Modified By: Laura Kendl
+; Description: Demonstrates how to build an Angular application.
+===========================================
+*/
+
+export interface IComposer {
+  composerId: number;
+  fullName: string;
+  genre: string;
+}
