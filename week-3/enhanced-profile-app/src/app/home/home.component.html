@@ -1,0 +1,61 @@
+<!--
+============================================
+; Title: Exercise 3.3
+; File Name: home.component.html
+; Author: Professor Krasso
+; Date: 7 June 2022
+; Modified By: Laura Kendl
+; Description: Demonstrates the multiple ways to navigate and pass data between components.
+; "You can pass data through the browser's URL (what we did in Exercise 3.2) or you can pass
+; data through the queryParams object and set skipLocationChange to true, which prevents route
+; parameters from being shown in the browser's URL" (Professor Krasso).
+===========================================
+-->
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <ul class="navbar-nav">
+
+    <li class="nav-item active">
+      <a class="nav-link" href="#">Home</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="#">About</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="#">Contact</a>
+    </li>
+
+
+  </ul>
+</nav>
+
+<div class="main">
+
+  <br /><br />
+
+  <h2>Exercise 3.3 - Passing Data to Routes, Part 2</h2>
+
+  <div class="row" *ngIf="isLoggedIn; else showError">
+    <div class="col-sm-4">
+      <app-my-image> </app-my-image>
+    </div>
+
+    <div class="col-sm-8">
+      <app-my-details> </app-my-details>
+    </div>
+  </div>
+
+  <!-- Create an HTML template that will dynamically show the content value of isLoggedIn -->
+  <ng-template #showError>  <!-- Tells Angular that when "else; showError" is called, show the error inside the ng-template. -->
+    <div class="row">
+      <div class="col-sm-12">
+        <h4 class="alert alert-danger">
+          You are not authorized to view this content.
+        </h4>
+      </div>
+    </div>
+  </ng-template>
+
+</div>
