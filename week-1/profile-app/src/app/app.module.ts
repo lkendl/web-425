@@ -1,3 +1,14 @@
+/*
+============================================
+; Title: Assignment 1.5
+; File Name: app.module.ts
+; Author: Professor Krasso
+; Date: 26 May 2022
+; Modified By: Laura Kendl
+; Description: Demonstrates how to build an Angular application.
+===========================================
+*/
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
