@@ -1,3 +1,14 @@
+/*
+============================================
+; Title: Exercise 2.3
+; File Name: app.module.ts
+; Author: Professor Krasso
+; Date: 2 June 2022
+; Modified By: Laura Kendl
+; Description: Demonstrates how to build an Angular application.
+===========================================
+*/
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
