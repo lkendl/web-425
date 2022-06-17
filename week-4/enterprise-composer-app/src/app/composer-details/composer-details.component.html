@@ -1,0 +1,28 @@
+<!--
+============================================
+; Title: Assignment 4.4
+; File Name: composer-details.component.html
+; Author: Professor Krasso
+; Date: 15 June 2022
+; Modified By: Laura Kendl
+; Description: Demonstrates how to build an Angular application.
+===========================================
+-->
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <ul class="list-group">
+
+        <li class="list-group-item">Composer ID: {{ composer.composerId }}</li>
+        <li class="list-group-item">Full name: {{ composer.fullName }}</li>
+        <li class="list-group-item">Genre: {{ composer.genre }}</li>
+      </ul>
+
+      <br />
+
+      <a routerLink="/composer-list" class="float-right">Return to Composers</a>
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,30 @@
+/**
+============================================
+; Title: Assignment 4.4
+; File Name: composer-list.component.css
+; Author: Professor Krasso
+; Date: 15 June 2022
+; Modified By: Laura Kendl
+; Description: Demonstrates how to build an Angular application.
+===========================================
+*/
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.contact-container {
+  width: 75%;
+}
+
+.txtSearch {
+  width: 30%;
+  float: right;
+  margin-bottom: 5px;
+}
