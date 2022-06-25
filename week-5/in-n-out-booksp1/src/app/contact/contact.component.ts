@@ -1,3 +1,14 @@
+/*
+============================================
+; Title: Exercise 5.2
+; File Name: contact.component.ts
+; Author: Professor Krasso
+; Date: 23 June 2022
+; Modified By: Laura Kendl
+; Description: Demonstrates how to build an Angular application.
+===========================================
+*/
+
 import { Component, OnInit } from '@angular/core';
 
 @Component({
