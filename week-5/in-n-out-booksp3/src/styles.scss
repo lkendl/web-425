@@ -1,0 +1,62 @@
+/**
+============================================
+; Title: Assignment 5.4
+; File Name: styles.scss
+; Author: Professor Krasso
+; Date: 23 June 2022
+; Modified By: Laura Kendl
+; Description: Demonstrates how to build an Angular application.
+===========================================
+*/
+
+/* You can add global styles to this file, and also import other style files */
+
+@import './theme';
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.about-img-container {
+  text-align: center;
+  padding: 10px;
+}
+
+.about-img {
+  /* width: 100%; */
+  max-width: 300px;
+  text-align: center;
+}
+
+.caption {
+  text-align: center;
+}
+
+.about-txt-container {
+  text-align: left;
+  padding: 10px;
+}
+
+.center {
+  text-align: center;
+}
+
+.mat-icon {
+  font-size: 3em;
+}
+
+.blue {
+  color: #2196F3;
+}
+
+.green {
+  color: #66BB6A;
+}
+
+.a-link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.a-link:hover {
+  text-decoration: underline;
+}
