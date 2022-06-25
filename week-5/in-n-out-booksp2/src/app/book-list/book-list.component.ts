@@ -1,0 +1,49 @@
+/*
+============================================
+; Title: Exercise 5.3
+; File Name: book-list.component.ts
+; Author: Professor Krasso
+; Date: 23 June 2022
+; Modified By: Laura Kendl
+; Description: Demonstrates how to build an Angular application.
+; [REF A] Stackoverflow: https://stackoverflow.com/questions/49699067/property-has-no-initializer-and-is-not-definitely-assigned-in-the-construc (Property '...' has no initializer and is not definitely assigned in the constructor)
+===========================================
+*/
+
+import { Component, OnInit } from '@angular/core';
+import { BooksService } from '../books.service';
+import { IBook } from '../book.interface';
+import { Observable } from 'rxjs';
+
+@Component({
+  selector: 'app-book-list',
+  templateUrl: './book-list.component.html',
+  styleUrls: ['./book-list.component.css']
+})
+export class BookListComponent implements OnInit {
+
+  // Create a books variable of type Observable<IBook[]>.
+  books: Observable<IBook[]>;
+  // Create a variable named header of type Array<string> and assign it isbn, title, numOfPages, authors.
+  header: Array<string> = ['isbn', 'title', 'numOfPages', 'authors'];
+  // Create a variable named book of type IBook.
+  book: IBook | undefined; // [REF A]
+
+  // Add BooksService to the components constructor.
+  constructor(private booksService: BooksService) {
+
+    // Call booksService.getBooks() function and assign the results to the books variable.
+    this.books = this.booksService.getBooks();
+  }
+
+  ngOnInit(): void {
+  }
+
+  // Create function showBookDetails(isbn: string).
+  showBookDetails (isbn: string) {
+    // Call booksService.getBook(isbn) and map the return object to the book variable.
+    this.book = this.booksService.getBook(isbn);
+    console.log(this.book); // Tests service is returning correct book object.
+  }
+
+}
