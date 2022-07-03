@@ -1,6 +1,6 @@
 /*
 ============================================
-; Title: Exercise 6.3
+; Title: Assignment 6.4
 ; File Name: app.component.ts
 ; Author: Professor Krasso
 ; Date: 1 July 2022

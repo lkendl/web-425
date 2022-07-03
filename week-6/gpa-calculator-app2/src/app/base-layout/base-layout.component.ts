@@ -1,6 +1,6 @@
 /*
 ============================================
-; Title: Exercise 6.3
+; Title: Assignment 6.4
 ; File Name: base-layout.component.ts
 ; Author: Professor Krasso
 ; Date: 1 July 2022
@@ -23,7 +23,7 @@ export class BaseLayoutComponent implements OnInit {
   assignment: string;
 
   constructor() {
-    this.assignment = "Exercise 6.3 - Layouts";
+    this.assignment = "Assignment 6.4 - Input Properties";
   }
 
   ngOnInit(): void {

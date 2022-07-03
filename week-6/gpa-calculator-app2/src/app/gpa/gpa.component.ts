@@ -1,7 +1,7 @@
 /*
 ============================================
-; Title: Exercise 6.3
-; File Name: auth-layout.component.ts
+; Title: Assignment 6.4
+; File Name: gpa.component.ts
 ; Author: Professor Krasso
 ; Date: 1 July 2022
 ; Modified By: Laura Kendl
@@ -9,14 +9,17 @@
 ===========================================
 */
 
-import { Component, OnInit } from '@angular/core';
+
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-auth-layout',
-  templateUrl: './auth-layout.component.html',
-  styleUrls: ['./auth-layout.component.css']
+  selector: 'app-gpa',
+  templateUrl: './gpa.component.html',
+  styleUrls: ['./gpa.component.css']
 })
-export class AuthLayoutComponent implements OnInit {
+export class GpaComponent implements OnInit {
+
+  @Input() gpaTotal: number;
 
   constructor() { }
 

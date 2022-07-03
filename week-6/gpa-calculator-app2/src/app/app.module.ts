@@ -1,6 +1,6 @@
 /*
 ============================================
-; Title: Exercise 6.3
+; Title: Assignment 6.4
 ; File Name: app.module.ts
 ; Author: Professor Krasso
 ; Date: 1 July 2022
@@ -23,6 +23,13 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
+import { GpaComponent } from './gpa/gpa.component';
+import { GradeSummaryComponent } from './grade-summary/grade-summary.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatListModule } from '@angular/material/list';
+import { FormsModule } from '@angular/forms';
+import { MatSelectModule } from '@angular/material/select';
 
 @NgModule({
   declarations: [
@@ -30,7 +37,9 @@ import { MatButtonModule } from '@angular/material/button';
     AuthLayoutComponent,
     BaseLayoutComponent,
     NotFoundComponent,
-    HomeComponent
+    HomeComponent,
+    GpaComponent,
+    GradeSummaryComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +48,12 @@ import { MatButtonModule } from '@angular/material/button';
     MatToolbarModule,
     FlexLayoutModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatListModule,
+    FormsModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]

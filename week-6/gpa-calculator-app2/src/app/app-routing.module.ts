@@ -1,6 +1,6 @@
 /*
 ============================================
-; Title: Exercise 6.3
+; Title: Assignment 6.4
 ; File Name: app-routing.module.ts
 ; Author: Professor Krasso
 ; Date: 1 July 2022
@@ -39,7 +39,7 @@ const routes: Routes = [
     ]
   },
   {
-    path: '""',
+    path: '**', // If there is any URL not found in the routing file, redirects to session/not-found.
     redirectTo: 'session/not-found' // Session is the parent route.
   }
 

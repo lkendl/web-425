@@ -1,7 +1,7 @@
 /*
 ============================================
-; Title: Exercise 6.3
-; File Name: home.component.ts
+; Title: Assignment 6.4
+; File Name: auth-layout.component.ts
 ; Author: Professor Krasso
 ; Date: 1 July 2022
 ; Modified By: Laura Kendl
@@ -9,15 +9,14 @@
 ===========================================
 */
 
-
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  selector: 'app-auth-layout',
+  templateUrl: './auth-layout.component.html',
+  styleUrls: ['./auth-layout.component.css']
 })
-export class HomeComponent implements OnInit {
+export class AuthLayoutComponent implements OnInit {
 
   constructor() { }
 
