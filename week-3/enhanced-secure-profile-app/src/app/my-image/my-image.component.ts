@@ -1,3 +1,15 @@
+/*
+============================================
+; Title: Exercise 3.3
+; File Name: my-image.component.ts
+; Author: Professor Krasso
+; Date: 7 June 2022
+; Modified By: Laura Kendl
+; Description: This exercise demonstrates there are multiple ways to add routing
+; in an Angular project.
+===========================================
+*/
+
 import { Component, OnInit } from '@angular/core';
 
 @Component({
