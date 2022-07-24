@@ -1,6 +1,6 @@
 /*
 ============================================
-; Title: Exercise 3.3
+; Title: Assignment 3.4
 ; File Name: my-image.component.ts
 ; Author: Professor Krasso
 ; Date: 7 June 2022
